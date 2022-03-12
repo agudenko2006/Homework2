@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+body {
+    background-color: #eee;
+    color: #464646;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    font-family: PT Sans, sans-serif;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 21px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+main{
+    width: 762px;
+    margin: 0 auto;
+}
+
+.sidebar{
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+    z-index: -1;
+}
+
+.sidebar section:nth-child(1){
+    margin-top: 0;
+}
+
+section {
+    border-radius: 3px;
+    background: white;
+    margin: 16px 0;
+    padding: 16px 24px 28px;
+}
+
+a{
+    text-decoration: none;
+    color: #1463d9;
+}
+
+a:visited{
+    color: #1483e9;
+}
+
+section div{
+    border-top: 1px solid #ededed;
+}
+
+section div:nth-child(2){
+    border: none;
+}
+
+.grey_p{
+    color:#999;
+}
+
+b, .bold{
+    font-weight: bold;
+    color: #464646;
+}
+
+span{
+    color: #464646;
+}
+
+.green{
+    color: #65c178;
+}
+
+.sidebar button{
+    color: #5677fc;
+    border: 1px solid #5677fc;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 6px 10px;
+    transition: .2s ease;
+}
+
+.sidebar button:hover{
+    background-color: #5677fc;
+    color: white;
+}
+
+.right-text{
+    text-align: right;
+    float: right;
+}
