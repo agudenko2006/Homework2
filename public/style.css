@@ -7,59 +7,80 @@ body {
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
     font-family: PT Sans, sans-serif;
+    /* margin: 0 100px; */
 }
 
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-h3{
-    font-size: 21px;
-}
-
-h4{
-    font-size: 16px;
+.wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
 
 main{
     width: 762px;
-    margin: 0 auto;
 }
 
-.sidebar{
-    width: 300px;
-    float: left;
-    margin-left: 100px;
-    z-index: -1;
-}
+/*--- Section ---*/
 
-.sidebar section:nth-child(1){
-    margin-top: 0;
-}
-
-section {
+.section {
     border-radius: 3px;
     background: white;
     margin: 16px 0;
     padding: 16px 24px 28px;
 }
 
-a{
+.section .section__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section .section__content {
+}
+
+.section__separator {
+    color: #0f8;
+}
+
+/*--- Contribution ---*/
+
+.contr .contr__title {
+    font-size: 21px;
+}
+
+.contr .contr__text {
+    font-size: 16px;
+}
+
+.contr .contr__stack {
+    /**/
+}
+
+.contr .contr__stack a {
+    color: #464646;
+}
+
+/*--- Sidebar ---*/
+
+.sidebar{
+    /* justify-self: center; */
+    width: 328px;
+}
+
+.work_xp .position {
+    font-size: 16px;
+}
+
+a {
     text-decoration: none;
     color: #1463d9;
 }
 
-a:visited{
+a:visited {
     color: #1483e9;
 }
 
-section div{
+.contr:not(:first-of-type) {
     border-top: 1px solid #ededed;
-}
-
-section div:nth-child(2){
-    border: none;
 }
 
 .grey_p{
