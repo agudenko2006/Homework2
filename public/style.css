@@ -6,18 +6,12 @@ body {
     color: #464646;
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
-    font-family: PT Sans, sans-serif;
-    /* margin: 0 100px; */
 }
 
 .wrapper{
     display: flex;
     justify-content: center;
     gap: 16px;
-}
-
-main{
-    width: 762px;
 }
 
 /*--- Section ---*/
@@ -32,13 +26,46 @@ main{
 .section .section__title {
     font-size: 18px;
     font-weight: bold;
+    margin: 0;
 }
 
-.section .section__content {
+/*--- Sidebar ---*/
+
+.sidebar{
+    width: 300px;
 }
 
-.section__separator {
-    color: #0f8;
+/*--- User ---*/
+
+.user__name{
+    font-size: 28px;
+    margin: 0 auto 12px 0;
+}
+
+.user__profile_picture{
+    display: block;
+    height: 150px;
+    margin: 30px auto 43px;
+}
+
+.user__button{
+    color: #5677fc;
+    border: 1px solid #5677fc;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 6px 10px;
+    transition: .2s ease;
+}
+
+.user__button:hover{
+    background-color: #5677fc;
+    color: white;
+}
+
+.connection__number{
+    float: right;
 }
 
 /*--- Contribution ---*/
@@ -51,40 +78,56 @@ main{
     font-size: 16px;
 }
 
-.contr .contr__stack {
-    /**/
-}
-
-.contr .contr__stack a {
+.stack .stack_item {
     color: #464646;
-}
-
-/*--- Sidebar ---*/
-
-.sidebar{
-    /* justify-self: center; */
-    width: 328px;
-}
-
-.work_xp .position {
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-    color: #1463d9;
-}
-
-a:visited {
-    color: #1483e9;
 }
 
 .contr:not(:first-of-type) {
     border-top: 1px solid #ededed;
 }
 
-.grey_p{
-    color:#999;
+/*--- work experience ---*/
+
+.job {
+    display: flex;
+    padding: 16px 0;
+}
+
+.job:first-of-type {
+    margin-top: 21px;
+}
+
+.job:not(:first-of-type) {
+    border-top: 1px solid #ededed;
+}
+
+.job__logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.job__title {
+    margin: 0;
+}
+
+.job__position {
+    font-size: 16px;
+}
+
+/*--- Others ---*/
+
+a {
+    text-decoration: none;
+    color: #1463d9;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1483e9;
 }
 
 b, .bold{
@@ -92,31 +135,14 @@ b, .bold{
     color: #464646;
 }
 
-span{
-    color: #464646;
-}
-
 .green{
     color: #65c178;
 }
 
-.sidebar button{
-    color: #5677fc;
-    border: 1px solid #5677fc;
-    border-radius: 4px;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 6px 10px;
-    transition: .2s ease;
+.grey, .separator{
+    color:#999;
 }
 
-.sidebar button:hover{
-    background-color: #5677fc;
-    color: white;
-}
-
-.right-text{
-    text-align: right;
-    float: right;
+span{
+    color: #464646;
 }
